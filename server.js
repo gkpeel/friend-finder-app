@@ -1,20 +1,21 @@
+// Dependencies
 var express = require('express');
-var path = require('path');
 
+
+// Express Configuration
 var app = express();
 var PORT = process.env.PORT || 8888;
 
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
 
-app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname, 'app/public/home.html'));
-});
 
-app.get('/survey', function(req,res){
-    res.sendFile(path.join(__dirname, 'app/public/survey.html'));
-});
+// Router
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
+
+// Listener
 app.listen(PORT, function() {
     console.log('Server started in http://localhost:' + PORT);
 });
