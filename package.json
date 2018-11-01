@@ -1,0 +1,19 @@
+{
+  "name": "friend-finder-app",
+  "version": "1.0.0",
+  "description": "An app that connects respondants with similar survey answers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkpeel/friend-finder-app.git"
+  },
+  "author": "Geoff Peel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkpeel/friend-finder-app/issues"
+  },
+  "homepage": "https://github.com/gkpeel/friend-finder-app#readme"
+}
